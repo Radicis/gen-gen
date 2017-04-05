@@ -1,0 +1,20 @@
+{
+  "nouns": [
+    "Generator",
+    "Plugin",
+    "Module",
+    "Interface",
+    "Connector",
+    "Application",
+    "Micro-Service",
+    "API",
+    "Parser",
+    "Scraper",
+    "System",
+    "Repository",
+    "Test Suite",
+    "Linter",
+    "Interpreter",
+    "Widget"
+  ]
+}

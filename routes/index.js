@@ -2,6 +2,7 @@ var express = require('express');
 var router = express.Router();
 var prefix = require('../json/nouns.json');
 var buzz = require('../json/buzzWords.json');
+var appType = require('../json/appType.json');
 
 /* GET home page. */
 router.get('/', function(req, res) {
@@ -10,13 +11,12 @@ router.get('/', function(req, res) {
 
 router.get('/generate', function(req, res){
 
-    var randPrefix, randPrefix, randBuzzWord;
+    var randPrefix = prefix.nouns[Math.floor(Math.random() * prefix.nouns.length)];
+    var randPrefix1 = prefix.nouns[Math.floor(Math.random() * prefix.nouns.length)];
+    var randBuzzWord = buzz.nouns[Math.floor(Math.random() * buzz.nouns.length)];
+    var randAppType = appType.nouns[Math.floor(Math.random() * appType.nouns.length)];
 
-    randPrefix = prefix.nouns[Math.floor(Math.random() * prefix.nouns.length)];
-    randPrefix1 = prefix.nouns[Math.floor(Math.random() * prefix.nouns.length)];
-    randBuzzWord = buzz.nouns[Math.floor(Math.random() * buzz.nouns.length)];
-
-    res.json(cap(randPrefix) + " " +  cap(randPrefix1) + " " +  cap(randBuzzWord) + " Generator");
+    res.json(cap(randPrefix) + " " +  cap(randPrefix1) + " " +  cap(randBuzzWord) + " " + cap(randAppType));
 
 });
 
