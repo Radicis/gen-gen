@@ -10,14 +10,6 @@ var index = require('./routes/index');
 
 var app = express();
 
-// // Connect to MongoDb
-// var mongoose = require('mongoose');
-//
-// mongoose.connect(config.database, function(err, db) {
-//     if (err) console.log("Cannot connect to Db:" + err);
-//     else console.log('Successfully connected to MongoDB');
-// });
-
 // Create the exress handlebars object
 // Pass in the helpers file to register all contained helpers
 var exhbs = hbs.create({
