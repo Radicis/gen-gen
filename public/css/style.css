@@ -13,12 +13,15 @@ a {
   color: #00B7FF;
 }
 
-
 #output{
   text-transform: capitalize;
   border:1px solid #aaa;
   font-size:2em;
   min-height:80px;
+}
+
+.btn{
+  font-size:1.6em;
 }
 
 
