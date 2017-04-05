@@ -15,6 +15,14 @@
     "Test Suite",
     "Linter",
     "Interpreter",
-    "Widget"
+    "Widget",
+    "Service",
+    "Browser",
+    "Hook",
+    "Listener",
+    "CLI",
+    "Framework",
+    "Mappper",
+    "Compiler"
   ]
 }
